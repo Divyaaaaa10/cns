@@ -37,14 +37,6 @@ string firstPermute(string input)
     return res ;
 }
 
-
-
-
-
-
-
-
-
 string secondPermute(string input)
 {
     string res = "" ;
@@ -54,7 +46,6 @@ string secondPermute(string input)
     }
     return res ;
 }
-
 
 void genKeys(string left, string right)
 {
