@@ -42,12 +42,6 @@ int findDetInverse(int R , int D = 26)
 		}
 		i++ ;
 	}
-
-
-
-	
-	
-
 if (i == 1) return 1;
 	else return p[i] = mod26(p[i-2] - p[i-1]*q[i-2]) ;
 }
@@ -92,22 +86,12 @@ void findInverse(int m[3][3] , int n , int m_inverse[3][3] )
 				temp[i][j] = m[i%3][j%3] ;
 			}
 		}
-		
-
-
-
-
-
-
-
 		for(int i=1; i<=3 ; i++)
 		{
 			for(int j=1; j<=3 ; j++)
 			{
 				adj[j-1][i-1] = temp[i][j]*temp[i+1][j+1] - temp[i][j+1]*temp[i+1][j];
 			
-
-
                                    }
 		}
 	}
@@ -202,10 +186,7 @@ int main(void)
 
 	cout << "Enter order of key matrix : ";
 	cin >> n ;
-
-
-
-
+	
 	cout<<"Enter key matrix: " <<endl;
 	for(int i=0; i<n; i++)
 	{
@@ -216,8 +197,6 @@ int main(void)
 	}
 	
 	cout << "\nOriginal text : " << pt << endl;
-
-	
 
             string ct = encrypt(pt, n) ;
 	cout << "Encrypted text : " << ct << endl;
