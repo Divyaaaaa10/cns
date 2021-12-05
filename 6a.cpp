@@ -21,10 +21,6 @@ string expansionPermute(string input)
 	return res;
 }
 
-
-
-
-
 string XOR(string input1, string input2)
 {
 	string res = "";
